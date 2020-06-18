@@ -25,7 +25,7 @@
   <div id="overlayer"></div>
   <div class="loader">
     <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
+      <span class="sr-only">Carregando...</span>
     </div>
   </div>
     
@@ -50,7 +50,7 @@
 
           <nav class="mx-auto site-navigation">
             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="index.html" class="nav-link active">Início</a></li>
               <li><a href="about.html">Sobre Nós</a></li>
               <li class="has-children">
                 <a href="job-listings.html">Produtos Listados</a>
@@ -73,16 +73,16 @@
                 </ul>
               </li>
               <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li class="d-lg-none"><a href="post-job.html"><span class="mr-2">+</span> Poste Produto</a></li>
-              <li class="d-lg-none"><a href="login.html">Log In</a></li>
+              <li><a href="contact.html">Contato</a></li>
+              <li class="d-lg-none"><a href="post-job.html"><span class="mr-2">+</span> Poste Produtos</a></li>
+              <li class="d-lg-none"><a href="login.html">Entrar</a></li>
             </ul>
           </nav>
           
           <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
             <div class="ml-auto">
-              <a href="post-job.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Poste Produto</a>
-              <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+              <a href="post-job.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Poste Produtos</a>
+              <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Entrar</a>
             </div>
             <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
           </div>
@@ -96,11 +96,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <h1 class="text-white font-weight-bold">Poste Produto</h1>
+            <h1 class="text-white font-weight-bold">Poste Produtos</h1>
             <div class="custom-breadcrumbs">
-              <a href="#">Home</a> <span class="mx-2 slash">/</span>
-              <a href="#">Produto</a> <span class="mx-2 slash">/</span>
-              <span class="text-white"><strong>Poste Produto</strong></span>
+              <a href="#">Início</a> <span class="mx-2 slash">/</span>
+              <a href="#">Produtos</a> <span class="mx-2 slash">/</span>
+              <span class="text-white"><strong>Poste Produtos</strong></span>
             </div>
           </div>
         </div>
@@ -115,15 +115,12 @@
           <div class="col-lg-8 mb-4 mb-lg-0">
             <div class="d-flex align-items-center">
               <div>
-                <h2>Poste Produto</h2>
+                <h2>Poste um Produto</h2>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="row">
-              <div class="col-6">
-                <a href="#" class="btn btn-block btn-light btn-md"><span class="icon-open_in_new mr-2"></span>Pré-Visualização</a>
-              </div>
               <div class="col-6">
                 <a href="#" class="btn btn-block btn-primary btn-md">Salvar Produto</a>
               </div>
@@ -136,19 +133,19 @@
               <h3 class="text-black mb-5 border-bottom pb-2">Detalhes do Produto</h3>
               
               <div class="form-group">
-                <label for="company-website-tw d-block">Upload Featured Image</label> <br>
+                <label for="company-website-tw d-block">Escolha uma imagem</label> <br>
                 <label class="btn btn-primary btn-md btn-file">
-                  Browse File<input type="file" hidden>
+                  Buscar<input type="file" hidden>
                 </label>
               </div>
 
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" class="form-control" id="email" placeholder="you@yourdomain.com">
+                <input type="text" class="form-control" id="email" placeholder="Inserir Email">
               </div>
               <div class="form-group">
                 <label for="job-title">Título do Produto</label>
-                <input type="text" class="form-control" id="job-title" placeholder="Título">
+                <input type="text" class="form-control" id="job-title" placeholder="Produto">
               </div>
               <div class="form-group">
                 <label for="job-location">Localização</label>
@@ -169,7 +166,7 @@
                 <select class="selectpicker border rounded" id="job-type" data-style="btn-black" data-width="100%" data-live-search="true" title="Selecione tipo de Produto">
                   <option>Semente</option>
                   <option>Ferramenta</option>
-                  <option>Verdura</option>
+                  <option>Fertilizantes</option>
                   <option>Verdura</option>
                 </select>
               </div>
@@ -178,54 +175,12 @@
               <div class="form-group">
                 <label for="job-description">Descrição do Produto</label>
                 <div class="editor" id="editor-1">
-                  <p>Descrição seu Produto!</p>
+                  <p>Descrever o produto</p>
                 </div>
               </div>
 
 
-              <h3 class="text-black my-5 border-bottom pb-2">Detalhes</h3>
-              <div class="form-group">
-                <label for="company-name">Nome</label>
-                <input type="text" class="form-control" id="company-name" placeholder="Nome Empresarial">
-              </div>
-
-              <div class="form-group">
-                <label for="company-tagline">Lema (Opcional)</label>
-                <input type="text" class="form-control" id="company-tagline" placeholder="Lema da Empresa">
-              </div>
-
-              <div class="form-group">
-                <label for="job-description">Descrição da Empresa de Venda (Opcional)</label>
-                <div class="editor" id="editor-2">
-                  <p>Descrição</p>
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <label for="company-website">Website (Opcional)</label>
-                <input type="text" class="form-control" id="company-website" placeholder="https://">
-              </div>
-
-              <div class="form-group">
-                <label for="company-website-fb">Facebook Username (Opcional)</label>
-                <input type="text" class="form-control" id="company-website-fb" placeholder="companyname">
-              </div>
-
-              <div class="form-group">
-                <label for="company-website-tw">Twitter Username (Opcional)</label>
-                <input type="text" class="form-control" id="company-website-tw" placeholder="@companyname">
-              </div>
-              <div class="form-group">
-                <label for="company-website-tw">Linkedin Username (Opcional)</label>
-                <input type="text" class="form-control" id="company-website-tw" placeholder="companyname">
-              </div>
-
-              <div class="form-group">
-                <label for="company-website-tw d-block">Carregar Logo</label> <br>
-                <label class="btn btn-primary btn-md btn-file">
-                  Procurar Arquivo<input type="file" hidden>
-                </label>
-              </div>
+             
 
             </form>
           </div>
@@ -237,10 +192,7 @@
           <div class="col-lg-4 ml-auto">
             <div class="row">
               <div class="col-6">
-                <a href="#" class="btn btn-block btn-light btn-md"><span class="icon-open_in_new mr-2"></span>Pré-Visualização</a>
-              </div>
-              <div class="col-6">
-                <a href="#" class="btn btn-block btn-primary btn-md">Salve o Produto</a>
+                <a href="#" class="btn btn-block btn-primary btn-md">Salvar Produto</a>
               </div>
             </div>
           </div>
@@ -259,35 +211,30 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Search Trending</h3>
+            <h3>Procurar sobre:</h3>
             <ul class="list-unstyled">
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Graphic Design</a></li>
-              <li><a href="#">Web Developers</a></li>
-              <li><a href="#">Python</a></li>
-              <li><a href="#">HTML5</a></li>
-              <li><a href="#">CSS3</a></li>
+              <li><a href="#">Sementes</a></li>
+              <li><a href="#">Fertilizantes</a></li>
+              <li><a href="#">Ferramentas</a></li>
             </ul>
           </div>
           <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Company</h3>
+            <h3>Companhia</h3>
             <ul class="list-unstyled">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Career</a></li>
+              <li><a href="#">Sobre nós</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Resources</a></li>
             </ul>
           </div>
           <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Support</h3>
+            <h3>Suporte</h3>
             <ul class="list-unstyled">
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Suporte</a></li>
+              <li><a href="#">Entre em contato conosco</a></li>
+              <li><a href="#">Termos de serviço</a></li>
             </ul>
           </div>
           <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Contact Us</h3>
+            <h3>Redes sociais:</h3>
             <div class="footer-social">
               <a href="#"><span class="icon-facebook"></span></a>
               <a href="#"><span class="icon-twitter"></span></a>
