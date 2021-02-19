@@ -20,6 +20,7 @@
 		position: absolute;
 		left: 5%;
 
+
 		@include media-breakpoint-down(sm) {
 			position: relative;
 			left: auto;
