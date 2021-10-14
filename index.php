@@ -4,7 +4,7 @@ include ('conexao/connect.php');
 include 'navbar.php';
 include 'funcoes.php';
 
-    $limite = 6;
+   $limite = 6;
 
     # Se pg não existe atribui 1 a variável pg
     $pg = (isset($_GET['pg'])) ? (int)$_GET['pg'] : 1;
@@ -13,17 +13,17 @@ include 'funcoes.php';
     # mostrados por página, exemplo 0 à 10, 11 à 20 e assim por diante
     $inicio = ($pg * $limite) - $limite;
 
-        $sql_Total = 'SELECT ProdId FROM produtos';
+        $sql_Total = "SELECT ProdId FROM produtos";
         $query_Total = $conn->prepare($sql_Total);
         $query_Total->execute();
 
         $query_result = $query_Total->fetchAll(PDO::FETCH_ASSOC);
 
         # conta quantos registros tem no banco de dados
-        $query_count =  $query_Total->rowCount(PDO::FETCH_ASSOC);
+        /*$query_count =  $query_Total->rowCount(PDO::FETCH_ASSOC);
 
         # calcula o total de paginas a serem exibidas
-        $qtdPag = ceil($query_count/$limite);
+        $qtdPag = ceil($query_count/$limite);*/
 
     # seleciona os registros do banco de dados pelo inicio e limitando pelo limite da variável limite
     $sql = "SELECT * FROM produtos ORDER BY ProdId DESC LIMIT ".$inicio. ", ". $limite;
@@ -35,7 +35,7 @@ include 'funcoes.php';
 <!doctype html>
 <html lang="pt-br">
   <head>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CCA &mdash; Catálogo para o comércio agrícola</title>
     <link href="https://panel.chatcompose.com/static/PT/global/export/css\main.1b3f9fb9.css" rel="stylesheet">    
@@ -197,6 +197,9 @@ include 'funcoes.php';
 
           <?php
 
+          $consulta = "SELECT * FROM produtos";
+          $registros = $conn -> query($consulta);
+
           foreach($registros as $row){ 
             $a = $row['ProdProprietario'];
 
@@ -264,12 +267,12 @@ include 'funcoes.php';
               <a  href="index.php?pg=1" class="prev">Anterior</a>
               <div class="d-inline-block">
                   <?php
-                  if($qtdPag > 1 && $pg <= $qtdPag){
+                   if($qtdPag > 1 && $pg <= $qtdPag){
 
                     for($i = 1; $i <= $qtdPag; $i++){
 
                             if($i == $pg){ 
-                              ?>
+                  ?>
                   <a href="#" class="active">1</a>
                   <?php
                   } else {
